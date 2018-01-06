@@ -1,4 +1,6 @@
 # Magnifier
+[![Gem Version](https://badge.fury.io/rb/magnifier-ruby.svg)](https://badge.fury.io/rb/magnifier-ruby)
+[![Build Status](https://travis-ci.org/tuned-up/magnifier-ruby.svg?branch=master)](https://travis-ci.org/tuned-up/magnifier-ruby)
 
 ## Anomaly detection library
 
