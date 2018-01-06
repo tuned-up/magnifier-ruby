@@ -1,4 +1,4 @@
-#Magnifier
+# Magnifier
 
 ## Anomaly detection library
 
