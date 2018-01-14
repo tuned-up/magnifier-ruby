@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'magnifier-ruby'
-  gem.version     = '1.0.0'
+  gem.version     = '1.1.0'
   gem.summary     = "Anomaly Detection"
   gem.description = "Anomaly detection using gaussian distribution, written in ruby"
   gem.authors     = ["Nick Grysimov"]

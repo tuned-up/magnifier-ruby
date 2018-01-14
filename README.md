@@ -15,6 +15,8 @@
 
 ### How
 
+#### General Usage
+
   ```ruby
   # training set should an MxN matrix, where M is a number of examples, and N is a number of features.
   #It should all be real-valued numbers, and each feature should be normally distributed in order for algorithm to work well.
@@ -35,6 +37,24 @@
   @magnifier.optimize_threshold(cross_validation_set, cross_validation_labels)
   @magnifier.threshold
   # => something with best f1 score
+  ```
+
+#### Import/Export
+
+  ```ruby
+  # you can easily export existing Magnifier object into a .yaml file.
+  # in order to do this, you have to specify a path(or file) to save content to
+  @magnifier.export("export.yaml")
+  # => #<File>
+  # method returs a file, so you can modify it later
+  # it is also possible to do an export using separate class:
+  Magnifier::Exporter.export("export.yaml", @magnifier)
+
+  #import is done in the same manner:
+  Magnifier::Importer.import("export.yaml")
+  # => magnifier object
+  #it is also possible to import inside current object, hovewer, all content will rewritten from file
+  @magnifier.import("export.yaml")
   ```
 
 ### Why
